@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{amsthm}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{listings}
+\usepackage{xcolor}
+
+
+% Configure Python style
+\lstset{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    stringstyle=\color{red},
+    commentstyle=\color{green!50!black},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    showstringspaces=false,
+    tabsize=4,
+    frame=single,
+    breaklines=true
+}
+
+\begin{document}
+\title{Assignment 1}
+\author{Lan Stare}
+\date{\today}
+\maketitle
+
+\section*{}
+\begin{enumerate}
+    \item 
+        \begin{itemize}
+            \item $1,0 \times 10^{7}$
+            \item $6,0 \times 10^{4}$
+            \item $6,0 \times 10^{2}$
+            \item $1,0 \times 10^{-9}$
+            \item $1,0 \times 10^{-11}$
+            \item TODO
+            \item $7,2 \times 10^{4}$
+        \end{itemize}
+    \item It is not always true that for every function $f$: $f(n) \in \mathcal{O}(f(n + 1))$, for example if we take $f(n) = n!$.
+    \item 
+        \begin{itemize}
+            \item 
+            \begin{proof}
+                TODO
+            \end{proof}
+            \item 
+            \begin{proof}
+                TODO
+            \end{proof}
+        \end{itemize}
+    \item 
+        \begin{itemize}
+            \item TODO
+            \item TODO
+        \end{itemize}
+    \item
+        \begin{lstlisting}
+def greet(name):
+    # This function prints a greeting
+    print(f"Hello, {name}!")
+
+greet("Lan")
+\end{lstlisting}
+\end{enumerate}
+
+\end{document}

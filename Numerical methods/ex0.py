@@ -30,15 +30,21 @@ print(dev_by_5_or_7())
     #b)
     
 def is_prime(n): #Checking if n is prime
-    for i in range(2, int(math.syrt(n)) + 1):
+    for i in range(2, int(math.sqrt(n)) + 1):
         if (n % i) == 0:
             return False
         return True
     
 def consecutive_primes(n):
-    group = []
-    while len(group) < n:
-        print("TODO")
+    count = 0
+    x = 3
+    while count < n:
+        if is_prime(x) and is_prime(x + 2):
+            print((x, x + 2))
+            count += 1
+        x += 1
+
+print(consecutive_primes(10))
     
 #Exercise 4:
     #a)
@@ -93,8 +99,38 @@ print(multiplication_of_arr([1, 4, 5]), multiplication_of_arr([6, 9, 5]))
 
     #f)
 def create_matrix():
-    
+    new_matrix = np.array([])
+    for i in range(4):
+        new_matrix = np.append(new_matrix, [])
+        for j in range(4):
+            if i % 2 == 0:
+                if j % 2 == 0:
+                    new_matrix = np.append(new_matrix, 0)
+                else: 
+                    new_matrix = np.append(new_matrix, 1)
+            else:
+                if j % 2 == 0:
+                    new_matrix = np.append(new_matrix, 1)
+                else: 
+                    new_matrix = np.append(new_matrix, 0)
+    new_matrix = np.reshape(new_matrix, (4, 4))
+    return new_matrix
+
+print(create_matrix())
 
     #g)
 
+a = np.random.rand(5)
+print(a)
+print(a.round())
+print(np.ceil(a))
+print(np.floor(a))
+
     #h)
+x = np.zeros(5)
+y = x
+z = np.copy(x)
+print(x, y, z)
+x = np.zeros(10)
+print(x, y, z)
+# y is still the same as x was when y was defined, z is a copy of the original x and is not affected by the change to x. So none of them change when x changes.

@@ -1,0 +1,100 @@
+\documentclass[a4paper]{article}
+\usepackage[a4paper, total={6in, 9in}]{geometry}
+\usepackage[english]{babel}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}{Definition}[section]
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage[svgnames]{xcolor}
+
+\newcommand{\instruction}[1]{\textcolor{blue}{#1}}
+
+\title{Fun title for your project}								
+\author{Student1 \\ Student2}
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\let\thedate\@date
+\makeatother
+
+
+\begin{document}
+
+%%% Title %%%
+\begin{center}
+\rule{\linewidth}{0.2 mm} \\[0.4 cm]
+{ \huge \bfseries \thetitle}\\
+\rule{\linewidth}{0.2 mm} \\[0.5 cm]
+\textsc{\Large Algorithms and Data Structures}\\[0.2 cm]				
+\textsc{\large Practical 1}\\[0.5 cm]				
+
+\begin{minipage}{0.4\textwidth}
+    \begin{flushleft} \large
+        \emph{Group groupnr}\\
+        \theauthor
+        \end{flushleft}
+        \end{minipage}~
+        \begin{minipage}{0.4\textwidth}
+        \begin{flushright} \large
+        ~\\
+        s0000001\\	s0000002
+    \end{flushright}
+\end{minipage}\\[1 cm]
+\end{center}
+
+\noindent\instruction{This is a template for practical 1, all text in blue and the pseudocode example may be removed. The report may have at most 6 pages in the current format. The current sections and subsections must be present in the report, additional subsections may be added. Additionally, you may add examples, figures or pseudocode snippets (see Algorithm~\ref{pseudocode}).}
+
+
+\section{Explanation of the Algorithm}
+\subsection{Initialization}
+\instruction{How do you read in the data and initialize the required data structures?}
+
+\subsection{Algorithm Logic}
+\instruction{Explain what your approach is, and what the algorithm does. Explain which data structures did you use and why. In case you adapt existing algorithms, explain how and why you modified and incorporated it.}
+
+\begin{algorithm}[h!]
+    \caption{Pseudocode example.}
+    \label{pseudocode}
+    \begin{algorithmic}[1]
+    \Function{Function}{arguments}
+    \State Step 1
+    \While{Condition 1 does not hold} F
+    \If{Condition 2}
+    \State \Return Yes
+    \Else 
+    \State Step 2
+    \EndIf
+    \EndWhile 
+    \State \Return No
+    \EndFunction
+    \end{algorithmic}
+    \end{algorithm}
+
+\subsection{Returning the Answer}
+\instruction{When does the algorithm terminate and what is returned?}
+
+\subsection{Optimizations}
+\instruction{Did you use any special tricks to make the algorithm faster in special cases based on the problem statement?}
+
+\section{Correctness Analysis}
+\instruction{Why is your algorithm correct? Provide precise arguments, supported by formal reasoning whenever needed. Think of an expanation to a critical colleague why your algorithm is correct. For examples, take a look at correctness proofs in the textbook (Algorithms Illuminated) or solutions to the weekly exercises.}
+
+
+\section{Complexity Analysis}
+\instruction{What is the big O complexity of your algorithm (including reading in the data and making the data structure)? The analysis should be written in terms of the given input parameters. For example, if the input includes sets $V$ of vertices and $E$ of edges the complexity analysis should result in a big-Oh complexity using $V$ and $E$. Include an explanation of your answer.} 
+
+
+\section{Reflection}
+\instruction{Briefly reflect on the project. For example, you can write about how easy it was to find a suitable algorithm? Or if your algorithm is not always correct on DOMjudge, why do you think you get wrong answers? Or if there are of additional ways to speed up the algorithm?}
+
+\end{document}

@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1756976798.37071 "c:/Users/lanst/OneDrive/Documents/All important/Erasmus/Erasmus-Notes-25-26/Algorithms and data structures/Template/article_template.tex" "article_template.pdf" "article_template" 1756976799.65076 0
-  "C:/Users/lanst/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1756976396 81088 29d6fa367ac022d1b69251d68c0742e6 ""
+["pdflatex"] 1760626793.06393 "c:/Users/lanst/OneDrive/Documents/All important/Erasmus/Erasmus-Notes-25-26/Algorithms and data structures/Template/article_template.tex" "article_template.pdf" "article_template" 1760626794.04783 0
+  "C:/Users/lanst/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1760090175 81286 a24972354787ad66f4189952495c30ed ""
   "C:/Users/lanst/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1706453224 24225046 e6928c7264d33f4c421e6fd1a31221cc ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc" 1256929440 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -110,10 +110,10 @@
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "article_template.aux" 1756976799 854 09f1714e15ff1ac66539836ec5f1a42b "pdflatex"
-  "article_template.out" 1756976799 287 803ef59da5833bc61d641c643f9e583d "pdflatex"
-  "article_template.tex" 1756976752 1387 b454a73646bad01af59d681baf6418c2 ""
-  "c:/Users/lanst/OneDrive/Documents/All important/Erasmus/Erasmus-Notes-25-26/Algorithms and data structures/Template/article_template.tex" 1756976752 1387 b454a73646bad01af59d681baf6418c2 ""
+  "article_template.aux" 1760626793 854 09f1714e15ff1ac66539836ec5f1a42b "pdflatex"
+  "article_template.out" 1760626793 287 803ef59da5833bc61d641c643f9e583d "pdflatex"
+  "article_template.tex" 1760626786 1387 b454a73646bad01af59d681baf6418c2 ""
+  "c:/Users/lanst/OneDrive/Documents/All important/Erasmus/Erasmus-Notes-25-26/Algorithms and data structures/Template/article_template.tex" 1760626786 1387 b454a73646bad01af59d681baf6418c2 ""
   (generated)
   "article_template.aux"
   "article_template.log"

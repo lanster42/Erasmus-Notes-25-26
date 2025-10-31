@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1761403889.47104 "c:/Users/lanst/OneDrive/Documents/All important/Erasmus/Erasmus-Notes-25-26/Algorithms and data structures/Practical1/practical1_template.tex" "practical1_template.pdf" "practical1_template" 1761403890.44701 0
+["pdflatex"] 1761919563.17349 "c:/Users/lanst/OneDrive/Documents/All important/Erasmus/Erasmus-Notes-25-26/Algorithms and data structures/Practical1/practical1_report.tex" "practical1_report.pdf" "practical1_report" 1761919564.13489 0
   "C:/Users/lanst/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1760090175 81286 a24972354787ad66f4189952495c30ed ""
   "C:/Users/lanst/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1706453224 24225046 e6928c7264d33f4c421e6fd1a31221cc ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -98,13 +98,13 @@
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/svgnam.def" 1700127522 4705 ec4d2f4b7125d5a5145cc9aabae1d54b ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Users/lanst/OneDrive/Documents/All important/Erasmus/Erasmus-Notes-25-26/Algorithms and data structures/Practical1/practical1_template.tex" 1761403888 3821 e16f904aff9bccbca6af7b8c976062de ""
-  "practical1_template.aux" 1761403890 1395 0cac0f697cbfc05285ec34cb4e1c3313 "pdflatex"
-  "practical1_template.out" 1761403890 1119 e959bfe15e05c306f748cb738f43f3ce "pdflatex"
-  "practical1_template.tex" 1761403888 3821 e16f904aff9bccbca6af7b8c976062de ""
+  "c:/Users/lanst/OneDrive/Documents/All important/Erasmus/Erasmus-Notes-25-26/Algorithms and data structures/Practical1/practical1_report.tex" 1761403992 3821 e16f904aff9bccbca6af7b8c976062de ""
+  "practical1_report.aux" 1761919563 1395 0cac0f697cbfc05285ec34cb4e1c3313 "pdflatex"
+  "practical1_report.out" 1761919563 1119 e959bfe15e05c306f748cb738f43f3ce "pdflatex"
+  "practical1_report.tex" 1761403992 3821 e16f904aff9bccbca6af7b8c976062de ""
   (generated)
-  "practical1_template.aux"
-  "practical1_template.log"
-  "practical1_template.out"
-  "practical1_template.pdf"
+  "practical1_report.aux"
+  "practical1_report.log"
+  "practical1_report.out"
+  "practical1_report.pdf"
   (rewritten before read)

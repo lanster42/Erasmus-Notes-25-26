@@ -3,8 +3,8 @@
 
 ###############################################################################################
 
-# Our first step is to open our files and extract the input information
-""" def read_dat(file): #This function traverses the given file and produces a new list where each element (a list of integers) represents the first vertex, the second vertex and the type of edge it is with an exception of the first element, which is constructed of |V| and |E|.
+""" # Our first step is to open our files and extract the input information
+def read_dat(file): #This function traverses the given file and produces a new list where each element (a list of integers) represents the first vertex, the second vertex and the type of edge it is with an exception of the first element, which is constructed of |V| and |E|.
     new_list = []
     with open(f"samples-practice/{file}", "r") as dat:
         for line in dat:
@@ -14,8 +14,7 @@
 file_2 = "2.in"
 file_14 = "14.in"
 a = read_dat(file_2)
-a14 = read_dat(file_14)
-a """
+a14 = read_dat(file_14) """
 ##############################################################################################
 
 
@@ -25,6 +24,8 @@ def max_roads_to_remove(n, edges):
     # INITIALIZATION
     parent_bus = list(range(n)) #this will keep track of connectivity of the bus_graph
     parent_ped = list(range(n)) #this will do the same for the pedestrian graph
+    size_bus = [0] * n #initiating size used in union function
+    size_ped = [0] * n
     
     bus_components = n #initiating the number of components which will be useful to check whether the solution is possible. So if a minimal spanning tree doesn't exist for either the busses or the pedestrians, due to deficiency in roads, we return -1. At initiation each vertex is in its own component.
     ped_components = n
@@ -32,17 +33,22 @@ def max_roads_to_remove(n, edges):
         #this operation (Find) of Union-find finds the name of the set that contains x (root)
     def find(parent, x):
         while parent[x] != x:
-            parent[x] = parent[parent[x]]
             x = parent[x]
         return x
 
         #let's construct union function: it merges two sets into a single set if they are not already connected
-    def union(parent, a, b):
-        pa, pb = find(parent, a), find(parent, b)
-        if pa != pb:
-            parent[pa] = pb #if they are in different sets, we connect them
-            return True
-        return False #if they are already in the same set, we would get a cycle by adding it so we return false
+    def union(parent, a, b, size):
+        root_a, root_b = find(parent, a), find(parent, b)
+        if root_a == root_b:
+            return False #if they are already in the same set, we would get a cycle by adding it so we return false
+        if size[root_a] < size[root_b]:
+            parent[root_a] = root_b
+        elif size[root_a] > size[root_b]:
+            parent[root_b] = root_a
+        else:
+            parent[root_b] = root_a
+            size[root_a] += 1
+        return True #so if they are not yet connected, connect them and return True 
 
     edges.sort(key=lambda e: 1 if e[2] == 2 else 2)  #we want to make sure to prioritize the "lower-weighted" roads which are the combined roads(identified by the attribute 2)
 
@@ -52,11 +58,11 @@ def max_roads_to_remove(n, edges):
     for u, v, t in edges:
         added = False
         if t == 1 or t == 2: #so if the road is in the bus graph
-            if union(parent_bus, u, v): #we try to connect u and v with union-find (like we described in lectures)
+            if union(parent_bus, u, v, size_bus): #we try to connect u and v with union-find (like we described in lectures)
                 bus_components -= 1 #by connecting two vertices, we reduce the number of components by 1
                 added = True
         if t == 0 or t == 2: #so if the road is in the pedestrian graph
-            if union(parent_ped, u, v):
+            if union(parent_ped, u, v, size_ped):
                 ped_components -= 1
                 added = True
         if added:
@@ -68,7 +74,7 @@ def max_roads_to_remove(n, edges):
             
     return len(edges) - kept_edges #lastly, we return the difference between the starting and the kept edges (if they exist)
 
-""" max_roads_to_remove(a14[0][0], a14[1:]) """
+""" print(max_roads_to_remove(a14[0][0], a14[1:])) """
 
 # Great! The code works fine on our examples. Now all we have to do is make it usable for DomJudge.
 

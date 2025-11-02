@@ -133,7 +133,15 @@ The main optimization we made to the algorithm was checking whether the graphs w
     Complexity of the main algorithm is $O(|E| \log |E|)$.
 \end{theorem}
 \begin{proof}
-    \textbf{Initialization:} Initializing the union-find data structures (\textsl{parent\_bus = list(range(n))} and \textsl{parent\_ped = list(range(n))}) takes $O(|V|)$ time each, since creating a list of size $n$ parses through all $n$ elements once. Both initializations of the number of components clearly happen in constant time.
+    \textbf{Initialization:} Initializing the union-find data structures (\textsl{parent\_bus = list(range(n))} and \textsl{parent\_ped = list(range(n))}) takes $O(|V|)$ time each, since creating a list of size $n$ parses through all $n$ elements once. Both initializations of the number of components clearly happen in constant time. The variable \textsl{kept\_edges} is also initialized in constant time.
+
+    Sorting the edges in python runs in $O(|E| \log |E|)$ time.
+
+    \textbf{Main loop:} The main loop iterates through all edges once, which takes $O(|E|)$ time. Inside the loop, we have at most two calls to the find function and one call to the union function. The union function consists of two calls to the find function and some constant time operations. Therefore, we only need to analyze the time complexity of the union-find data structure.
+
+    The find and the union function were implemented exactly like they were at one of our lecture, so we can assume that both find and union function run in $O(\log|E|)$ complexity.
+    
+    We can see that the main comtributor towards complexity is the sort, making the total complexity of the main loop $O(|E| \log |E|)$.
 \end{proof}
 
 

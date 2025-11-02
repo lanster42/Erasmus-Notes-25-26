@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1761919563.17349 "c:/Users/lanst/OneDrive/Documents/All important/Erasmus/Erasmus-Notes-25-26/Algorithms and data structures/Practical1/practical1_report.tex" "practical1_report.pdf" "practical1_report" 1761919564.13489 0
+["pdflatex"] 1762087280.75337 "c:/Users/lanst/OneDrive/Documents/All important/Erasmus/Erasmus-Notes-25-26/Algorithms and data structures/Practical1/practical1_report.tex" "practical1_report.pdf" "practical1_report" 1762087281.76563 0
   "C:/Users/lanst/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1760090175 81286 a24972354787ad66f4189952495c30ed ""
   "C:/Users/lanst/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1706453224 24225046 e6928c7264d33f4c421e6fd1a31221cc ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -15,6 +15,8 @@
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr12.tfm" 1136765053 1288 655e228510b4c2a1abe905c368440826 ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr17.tfm" 1136765053 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr8.tfm" 1136765053 1292 21c1c5bfeaebccffdb478fd231a0997d ""
+  "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsl10.tfm" 1136765053 1508 efecb4a315fe0975509670a272d75ef5 ""
+  "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmti10.tfm" 1136765053 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmti12.tfm" 1136765053 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1247596666 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
@@ -23,6 +25,9 @@
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
+  "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb" 1247596666 35022 e40946b20bfdcd1099eafb2bcd9f25dd ""
+  "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1247596667 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1247596667 36118 fad905eba93cff5bce1e185fe980a177 ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/tex/generic/atbegshi/atbegshi.sty" 1575571100 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -98,10 +103,10 @@
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/svgnam.def" 1700127522 4705 ec4d2f4b7125d5a5145cc9aabae1d54b ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Users/lanst/OneDrive/Documents/All important/Erasmus/Erasmus-Notes-25-26/Algorithms and data structures/Practical1/practical1_report.tex" 1761403992 3821 e16f904aff9bccbca6af7b8c976062de ""
-  "practical1_report.aux" 1761919563 1395 0cac0f697cbfc05285ec34cb4e1c3313 "pdflatex"
-  "practical1_report.out" 1761919563 1119 e959bfe15e05c306f748cb738f43f3ce "pdflatex"
-  "practical1_report.tex" 1761403992 3821 e16f904aff9bccbca6af7b8c976062de ""
+  "c:/Users/lanst/OneDrive/Documents/All important/Erasmus/Erasmus-Notes-25-26/Algorithms and data structures/Practical1/practical1_report.tex" 1762087280 11763 8c6e12ed0ad8812411d13cce5112edd5 ""
+  "practical1_report.aux" 1762087281 1424 3ad47d0e5a9be72c0aec9ef7fb00a269 "pdflatex"
+  "practical1_report.out" 1762087281 1119 e959bfe15e05c306f748cb738f43f3ce "pdflatex"
+  "practical1_report.tex" 1762087280 11763 8c6e12ed0ad8812411d13cce5112edd5 ""
   (generated)
   "practical1_report.aux"
   "practical1_report.log"

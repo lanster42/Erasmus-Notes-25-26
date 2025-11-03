@@ -41,13 +41,11 @@
 \begin{minipage}{0.4\textwidth}
     \begin{flushleft} \large
         \emph{Group number: 42}\\
-        \theauthor
+        \theauthor\
         \end{flushleft}
-        \end{minipage}~
+        \end{minipage}~\
         \begin{minipage}{0.4\textwidth}
-        \begin{flushright} \large
-        ~\\
-        ~\\	s1169977
+        \begin{flushright} \large~\\~\\	s1169977
     \end{flushright}
 \end{minipage}\\[1 cm]
 \end{center}
@@ -56,7 +54,7 @@
 \section{Explanation of the Algorithm}
 \subsection{Initialization}
 \subsubsection*{Reading in the data}
-We read in the data by first saving the entire input as a list of integers using the sys library. This allows us to easily split the flattened row into integers regardless of the format of the .in files, since some files only have the number of vertices ($|V|$) and edges ($|E|$) in the first line (and every subsequent line contains exactly one edge) while others have all the data in a single line. After reading in the data, we extract $|V|$ and $|E|$ from the list of integers we just created. Finally, we build a list of edge tuples by iterating through the list of integers and grouping every three integers into a tuple representing an edge ($v1$, $v2$, $type$).
+We read in the data by first saving the entire input as a list of integers using the sys library. This allows us to easily split the flattened row into integers regardless of the format of the \textsl{.in} files, since some files only have the number of vertices ($|V|$) and edges ($|E|$) in the first line (and every subsequent line contains exactly one edge) while others have all the data in a single line. After reading in the data, we extract $|V|$ and $|E|$ from the list of integers we just created. Finally, we build a list of edge tuples by iterating through the list of integers and grouping every three integers into a tuple representing an edge ($v1$, $v2$, $type$).
 
 \subsubsection*{Initializing data structures}
 The main data structure we use to store our graph is a list of tuples, where each tuple represents an edge in the graph. Each tuple contains three elements: the starting vertex, the ending vertes, and the type of edge we have. Type 0 repredents a pedestrian-only road, type 1 represents a bus-only road and type 2 represents a road that can be used by both pedestrians and busses (later referred to as a combined road). We use this data structure because it allows us to easily iterate through all the edges and we also don't need to keep track of adjacent vertices, which would be possible with an adjacency list or matrix but would be more expensive. Duplicate edges are also possible in the input, so dictionaries are not suitable for this problem.
@@ -88,20 +86,19 @@ Later we also added an extra stopping criterion to the main loop that checks whe
 
 
 \begin{algorithm}[h!]
-    \caption{Pseudocode example.}
-    \label{pseudocode}
+    \caption{Pseudocode example.}\label{pseudocode}
     \begin{algorithmic}[1]
     \Function{Function}{arguments}
-    \State Step 1
+    \State\ Step 1
     \While{Condition 1 does not hold} F
     \If{Condition 2}
-    \State \Return Yes
-    \Else 
-    \State Step 2
-    \EndIf
-    \EndWhile 
-    \State \Return No
-    \EndFunction
+    \State\Return\ Yes
+    \Else\ 
+    \State\ Step 2
+    \EndIf\
+    \EndWhile\ 
+    \State\Return\ No
+    \EndFunction\
     \end{algorithmic}
     \end{algorithm}
 

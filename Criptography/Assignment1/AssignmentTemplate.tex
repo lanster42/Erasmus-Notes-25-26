@@ -1,11 +1,11 @@
 \documentclass[a4paper,10pt]{article}
 \usepackage{amsmath}
 \usepackage[utf8]{inputenc}
-\usepackage{enumitem} % to change the style of the counters
+\usepackage{enumitem} 
 \usepackage{hyperref}
 
-\title{M4C 2024 \--  Assignment 1} % adapt for other assignments
-\author{John Doe \and Jane Smith}
+\title{M4C 2025 \--  Assignment 1} 
+\author{Lan Stare}
 \date{\today}
 
 \begin{document}
@@ -19,9 +19,19 @@ If you want some introduction to the whole problem, you can write it here \ldots
  
 \begin{enumerate}[label= (\alph*)]
 
- \item Your solution to the first sub-problem comes here \ldots
+ \item encrypted text: XEFVRXEFWPDJAFPCCBHBRVMDUJ\\
+ decryption process: To get back the plain text, you need to use the same `lenghtened' key but now you subtract the number of the letter in the key from the corresponding number of the letter in the encrypted text.
 
- \item \ldots
+ \item Let $p_1, p_2, \ldots, p_n$ represent letters in P,  $k_1, k_2, \ldots, k_n$ letters in `lenghtened' K and $c_1, c_2, \ldots, c_n$ letters in C.\\
+ Encryption: $c_i = (p_i + k_i)\mod26$\\
+ Decryption: $p_i = (c_i - k_i)\mod26$
+ \item No matter which 2 out of the 3 items are captured by the adversary, since you always catch at least a key or plain text. Knowing at least one of them can lead to knowing the other.\\
+ Captured P and K: encryption\\
+ Captured P and C: you can write down the differences between letters and derive the lenghtened key. From there you just take the first iteration.\\
+ Captured K and C: decryption
+
+ \item We can use this table for both encrypting and decypting process. We can imagine that the first row (or symmetrically the first column) represents the key and the furst column (or symmetrically the first row) the plain text. For every letter in the plain text we can lookup its corresponding letter in the cipher text by taking the letter in the row of the letter (in plain text) and column of the letter from the key (in corresponding place).\\
+ We can also use this table for decryption process by again imagining the first row/column as plain text and first column/row as key. Since we only know the cipher text and key this time, for every letter in cipher text we need to first find the letter that corresponds to it in key. We then look into that (from the key) letter's row until we find the letter from the cipher text that responds to it. The column in which this letter is situated belings to the letter in the plain text.
 
 \end{enumerate}
 

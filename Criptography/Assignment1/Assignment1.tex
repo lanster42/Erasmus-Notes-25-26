@@ -1,0 +1,74 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem} 
+\usepackage{hyperref}
+
+\title{M4C 2025 \--  Assignment 1} 
+\author{Lan Stare}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+% -------------------------------------------------------------
+\subsection*{Problem 1}
+ 
+\begin{enumerate}[label= (\alph*)]
+
+ \item encrypted text: XEFVRXEFWPDJAFPCCBHBRVMDUJ\\
+ decryption process: To get back the plain text, you need to use the same `lenghtened' key but now you subtract the number of the letter in the key from the corresponding number of the letter in the encrypted text.
+
+ \item Let $p_1, p_2, \ldots, p_n$ represent letters in P,  $k_1, k_2, \ldots, k_n$ letters in `lenghtened' K and $c_1, c_2, \ldots, c_n$ letters in C.\\
+ Encryption: $c_i = (p_i + k_i)\mod26$\\
+ Decryption: $p_i = (c_i - k_i)\mod26$
+ \item No matter which 2 out of the 3 items are captured by the adversary, since you always catch at least a key or plain text. Knowing at least one of them can lead to knowing the other.\\
+ Captured P and K: encryption\\
+ Captured P and C: you can write down the differences between letters and derive the lenghtened key. From there you just take the first iteration.\\
+ Captured K and C: decryption
+
+ \item We can use this table for both encrypting and decypting process. We can imagine that the first row (or symmetrically the first column) represents the key and the furst column (or symmetrically the first row) the plain text. For every letter in the plain text we can lookup its corresponding letter in the cipher text by taking the letter in the row of the letter (in plain text) and column of the letter from the key (in corresponding place).\\
+ We can also use this table for decryption process by again imagining the first row/column as plain text and first column/row as key. Since we only know the cipher text and key this time, for every letter in cipher text we need to first find the letter that corresponds to it in key. We then look into that (from the key) letter's row until we find the letter from the cipher text that responds to it. The column in which this letter is situated belings to the letter in the plain text.
+
+\end{enumerate}
+
+% -------------------------------------------------------------
+
+\subsection*{Problem 2}
+ 
+\begin{enumerate}[label= (\alph*)]
+
+ \item \ldots
+
+\end{enumerate}
+
+% ------------------------------------------------------------- 
+\subsection*{Problem 3}
+\begin{enumerate}[label= (\alph*)]
+
+ \item The most important parts of enigma are: battery, key switches, plugboard, rotors and light bulbs. Encryption process starts with pressing down the switch of the corresponding letter in the plain text. Electricity runs through this key switch and to the plugboard, where the letter can already be changed if there is a cable attached to it. Electricity in that case runs through the cable to the other letter and to the 3 rotors. Each of them will definitely change the letter twice. The letter will also be changed once at the reflector. Electricity then runs back to the plugboard to check if the newest letter has a cable connected to it. From there it goes to the corresponding key switch and to the light bulb (where it turns it on). The circut needs to be connected so it runs back to the battery.
+ \item First, we need to choose 3 out of 5 rotors in total: $\binom{5}{3}$. We then need to learn their order: $3!$. There are 26 letters on each one and we need to choose the starting position for each one: $26^3$. The last thing we need to learn is the positions of the cables. For this part I came to the conclusion in a different way than James Grimes. My reasoning follows: First you need to choose a pair out of 26 letters: $\binom{26}{2}$. After that you again need to choose a pair, but only out of 24 letters, since the letters cannot be connected to 2 different letters: $\binom{24}{2}$. We follow the same logic 8 more times (10 in total) to get equation: $\binom{26}{2}\binom{24}{2}\binom{22}{2}\binom{20}{2}\binom{18}{2}\binom{16}{2}\binom{14}{2}\binom{12}{2}\binom{10}{2}\binom{8}{2}$. Simplifying this equation gives us: $26! / (2^{10} * 6!)$. The last thing we need to take into account is shuffling: $1/10!$. This results in the wanted formula.
+ \item Following the logic from the previous question, we would get: \[\binom{n}{k} k!\ 26^k\ \frac{26!}{6!\ 10!\ 2^{10}} \] number of settings.
+ \item If we neglect the first part of the formula, there is exaclty 1 combination for the plugboard if we don't use any plugs. If we use exactly 1 plug, we need to choose 2 out of 26 letters. If we use exactly 2 plugs, we first need to choose 2 out of 26 and then 2 out of 24 letters. The order of the two pairs also does not matter, resulting in the following formula:
+ \[ 1 + \binom{26}{2} + \frac{\binom{26}{2}\binom{24}{2}}{2!} \]
+
+ \item The total number of unrestricted mappings for 4 letters is just permutations of 4 elements, so $4! = 24$. The number of mappings where no letter mapps to itself, however, is only 9.
+ 
+ Because the letter would never map onto itself, the cipher became easier to crack. Even in our example with only 4 elements there are 24 possible combinations where we aren't even considering the rotor contribution. If a letter never maps onto itself, the whole equation becomes smaller. However, the biggest implication this provided was that if you knew of a word or two that would most definitely be included in the cipher every day, you could try to look for that sequence of letters and only try the combinations where the letters wouldn't overlap. This reduces the amount of possibilities greatly.
+
+\end{enumerate}
+
+% -------------------------------------------------------------
+\subsection*{Problem 4}
+ 
+\begin{enumerate}[label= (\alph*)]
+
+ \item \ldots
+
+\end{enumerate}
+
+% -------------------------------------------------------------
+
+\end{document}
+

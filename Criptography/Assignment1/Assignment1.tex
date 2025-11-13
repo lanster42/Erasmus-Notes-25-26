@@ -1,8 +1,10 @@
 \documentclass[a4paper,10pt]{article}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage[utf8]{inputenc}
 \usepackage{enumitem} 
 \usepackage{hyperref}
+\usepackage{graphicx}
 
 \title{M4C 2025 \--  Assignment 1} 
 \author{Lan Stare}
@@ -39,7 +41,8 @@
  
 \begin{enumerate}[label= (\alph*)]
 
- \item \ldots
+ \item A number ends in exactly 1 zero if it is a multiple of 10 and not a multiple of 100. If a number ends in exactly i zeros, it is a multiple of $10^{i}$ and not a multiple of $10^{i + 1}$. I don't know why this number ends in exactly 6 zeros.
+ \item 
 
 \end{enumerate}
 
@@ -63,7 +66,23 @@
  
 \begin{enumerate}[label= (\alph*)]
 
- \item \ldots
+ \item 1, 5, 7, 11, 13, 17, 19, 23 (so basically any number lower than 24 that is composed of only primes that don't include 2 and 3, since $24 = 2^3 3$
+ 
+ Because we there are 8 numbers, lower than 24 that are its coprimes, we have: $\varphi(24) = 8$)
+ \item \includegraphics[scale=0.1]{4ex}
+ 
+ Interesting fact I noticed: Not only is the matrix symmetrical over the $x = -y$ diagonal (sorry I don't know how to describe it better), it is also symmetrical over the $x = y$ diagonal.
+ \item An inverse of a unit is the unit itself. We can learn this by looking at the diagonal elements of the table in (b).
+ \item The sum of all units is 0 and the product of all units is 1. It would seem that we get precisely the units of addition and multiplication in $\mathbb{Z}_{24}$. The reasoning in is under the next question.
+ \item Firstly, we have: $\varphi(11) = 10$, therefore $\varphi(11)/11 = 10/11 \approx 1$, because 11 is prime. The sum of all elements is again 0 and the product is 10.
+ 
+ Next, we have: $\varphi(15) = 8$, therefore $\varphi(15)/15 = 8/15 \approx 1/2$. The sum of all elements is again 0 and the product is again 1.
+
+ It seems that the sum of elements is always 0 no matter the amount of elements in our space. After some thinking I have noticed that there is always an even amount of elements in our space that are each others' inverses in both addition and multiplication spaces. In multiplication space, the element is its own inverse, whereas in the addition space, the inverse of the j-th element is element (n - j) where n is the modulo. Since we have an even amount of elements in our space and (for some reason***) for every element in the space, there exists its inverse (by addition). Example: in n = 9, the elements in our space are: 1, 2, 4, 5, 7, 8. So when adding them all up, we can add 1 and 8 to form 9 (= 0), 2 and 7 to form 9 (= 0) and 4 and 5 to again form 9. I don't know how to prove that this is true for all n, if it even is.
+ 
+ The product, however, is dependent on the number of elements in our space. When we had 8 elements, the product was 1 and when we had 10 elements, the product was 10. Upon further thinking, I noticed that if the numeber of elements in our space is a power of 2, the product is always 1. Furthermore, I also tried what happend when the number of elements is 6 (I toon n = 9) and noticed that the product was 8, which was (n - 1). Since there is always an even number of elements in our space, I can only suspect that this holds for every other n, which space doesn't have a power of 2 elements.
+
+ ***Further thinking: Maybe this is true because if we subtract n from (n - j), we get -j, which is not devisible by any factor from n, since j and n are coprime.
 
 \end{enumerate}
 

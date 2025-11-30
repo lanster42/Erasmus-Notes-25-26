@@ -24,7 +24,7 @@
  
  Following the same principle we can conslude that these elements (besides 2) have order 18: 3, 10, 13, 14, 15.
 
- \item If a group G has a prime order p (p number of elements), then the order of every element in the group has to be either 1 or the prime number p. This is because of the corollary after the Langrange's theorem states, that the order of any element in the group has to devide the number of elements in that group. Since p is prime (it's only devisible by 1 and p), all of the orders are either 1 or p. Since 2 is the lowest prime number, we have 2 or more elements. If all the elements were of order 1, they would all be equivalent to the identity element, which would mean that we only had 1 element (contradictory with the fact that we have 2 or more elements). Therefore at least one element has order p, which means that it generates the whole group, which means the group is cyclic.
+ \item If a group G has a prime order p (p number of elements), then the order of every element in the group has to be either 1 or the prime number p. This is because the corollary after the Langrange's theorem states, that the order of any element in the group has to devide the number of elements in that group. Since p is prime (it's only devisible by 1 and p), all of the orders are either 1 or p. Since 2 is the lowest prime number, we have 2 or more elements. If all the elements were of order 1, they would all be equivalent to the identity element, which would mean that we only had 1 element (contradictory with the fact that we have 2 or more elements). Therefore at least one element has order p, which means that it generates the whole group, which means the group is cyclic.
 
 \end{enumerate}
 
@@ -39,9 +39,26 @@
  \textit{Deeper understanding}: If we want to check that $p$ is prime, we can only check the first few prime numbers that are smaller (or equal) than $\sqrt{p}$. The reason for this is that if $p$ is not prime (and $\sqrt{p} \notin{\mathbb{Z}}$) then p has at least 2 divisers $a, b \in \{2, 3, \ldots, p - 1\}$ so that $p = a b$. Both a and b cannot be larger than $\sqrt{p}$, since they would not multiply to p.
 
  \item Fermat's little theorem can't really help us in this case (or at least I don't see a useful connection). It tells us that $x^{556} \equiv 1 (\mod 557)$ for every integer x that isn't divisible by 557. 
- \item If I understood the question correctly then $x$ is an element of integers ($\mathbb{Z}$).
- \item 
+ \item If I understood the question correctly then $x$ is an element of ${2, 3, \ldots 556}$. We removed 0 and 1 because $0^{k} = 0 \neq 321 (\mod n)$ and $1^{k} = 1 \neq 321 (\mod n)$ for $n > 1$ which is our case.
+ \item while looking through youtube to find a good explanation for why we can use extended euclidean algorithm for finding the inverse, I found that this one explains it well. I used it to solve this problem: \href{https://www.youtube.com/watch?v=IwRtISxAHY4}{link}
+ \includegraphics[scale=0.11]{2ex_d}
 
+ The result was: $-197 \equiv 556 - 197 \equiv 359 (\mod 556)$
+
+ \textit{Observation}: This method looks promising for implementation into python but too error prone for hand calculations.
+ \item Please correct me if I'm wrong, but because 557 is prime, we can translate our problem into a cyclic group problem where we look at group $mathbb{Z}_{p}^*$. Here we also learnt that $ p \in \mathbb{P} \implies \mathbb{Z}_{p}^* \cong (\mathbb{Z}_{p - 1}, +)$. So when the base is in mod 557, we can regard the exponent as being in mod 556. So for that reason ${(x^{127})}^{357} = {{(x^{127})}^{127}}^{-1} = x^{127 * {127}^{-1}} = x^1$.
+ 
+ From your instructions I speculated that we can maybe generalize this notion for when 557 is not prime. So for $m \in \mathbb{N}$ we could generally say that $\mathbb{Z}_{m}^* \equiv (\mathbb{Z}_{\phi(m)}, +)$. I proposed this question to duck.ai which said that we cannot generally speculate this because the structures are generally different: $\mathbb{Z}_{m}^*$ is not generally cyclic and $(\mathbb{Z}_{n}, +)$ is always cyclic for $n \in \mathbb{N}$. They do, however, have the same cardinality (although I don't know is this could be useful).
+
+ \item I answered this question with (e). The final solution to the congruence is then of course: $321^{t} = 321^{359}$.
+ \item since I didn't really understand the way we did the square-and-multiply algorithm in class, I once again found a short explanation video which I used as a reference: \href{https://www.youtube.com/watch?v=8r4-5k-o1QE}{link}
+ Here are my computations:
+
+\includegraphics[scale=0.12]{2ex_g}
+
+If my computations are correct (from which I'm sure there's a large probability of human error), the solution is: $321^{359} \mod 557 = 106$.
+
+When the oportunity arises, I will look into why the square-and-multiply method works. For now I will be okay with the result.
 \end{enumerate}
 
 % ------------------------------------------------------------- 

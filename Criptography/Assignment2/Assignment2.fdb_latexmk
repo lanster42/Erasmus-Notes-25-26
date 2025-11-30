@@ -1,11 +1,13 @@
 # Fdb version 4
-["pdflatex"] 1764277165.4558 "c:/Users/lanst/OneDrive/Documents/All important/Erasmus/Erasmus-Notes-25-26/Criptography/Assignment2/Assignment2.tex" "Assignment2.pdf" "Assignment2" 1764277166.22535 0
+["pdflatex"] 1764505250.44779 "c:/Users/lanst/OneDrive/Documents/All important/Erasmus/Erasmus-Notes-25-26/Criptography/Assignment2/Assignment2.tex" "Assignment2.pdf" "Assignment2" 1764505251.32815 0
   "1ex_a.jpeg" 1764266471 1317515 d3119ec6198b0dc6c44c492456a08305 ""
   "2ex_a.jpeg" 1764015930 932499 d2114870c6dc72b73eff2ca65f8ddc62 ""
+  "2ex_d.jpeg" 1764500188 2222475 b3d6760e1b026e7212834697f7b26e56 ""
+  "2ex_g.jpeg" 1764503918 3200495 898d29a40b12711e40484ebad569d4a0 ""
   "3ex_b.jpeg" 1764275523 2696561 e49d1b383c7fcfbef0ec812a05438748 ""
-  "Assignment2.aux" 1764277166 162 fa61bf9ecf9314f94d51aa32222a725c "pdflatex"
-  "Assignment2.out" 1764277165 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "Assignment2.tex" 1764277164 5005 14e5b7b32763c3b3c5c8f7465231395e ""
+  "Assignment2.aux" 1764505251 162 f042405b684a8c860cba07045d113040 "pdflatex"
+  "Assignment2.out" 1764505250 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "Assignment2.tex" 1764505249 7287 ca70526718f11db790bfac2f1e4256f7 ""
   "C:/Users/lanst/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1760090175 81286 a24972354787ad66f4189952495c30ed ""
   "C:/Users/lanst/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1706453224 24225046 e6928c7264d33f4c421e6fd1a31221cc ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -35,8 +37,10 @@
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1247596666 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
+  "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1247596667 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247596667 32762 7fee39e011c23b3589931effd97b9702 ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1247596666 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1247596666 32716 08e384dc442464e7285e891af9f45947 ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1247596667 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1247596673 34694 870c211f62cb72718a00e353f14f254d ""
@@ -92,7 +96,7 @@
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657800696 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/lanst/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "c:/Users/lanst/OneDrive/Documents/All important/Erasmus/Erasmus-Notes-25-26/Criptography/Assignment2/Assignment2.tex" 1764277164 5005 14e5b7b32763c3b3c5c8f7465231395e ""
+  "c:/Users/lanst/OneDrive/Documents/All important/Erasmus/Erasmus-Notes-25-26/Criptography/Assignment2/Assignment2.tex" 1764505249 7287 ca70526718f11db790bfac2f1e4256f7 ""
   (generated)
   "Assignment2.aux"
   "Assignment2.log"

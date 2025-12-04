@@ -19,7 +19,18 @@
  
 \begin{enumerate}[label= (\alph*)]
 
- \item \ldots
+ \item Euler's totient function $\phi(n)$ is the function that maps a natural number $n \in \mathbb{N}$ to its number of coprimes that are smaller than $n$. Because $n = p q$, $\phi(n)$ is the number of coprimes of $p q$ from 1 up to $p q$.
+ \item Remark: I got a bit carried away with exercising my formal proving ability which means this question was answered more thoroughly than it was probably expected (which is becoming my trait at this point).
+ 
+ Let's first prove the next statement: \textit{Intergers smaller than $n = p q$ are coprime to $p$ and $q$ iff they are coprime to $n$.}
+ 
+ This can be explained by the definition of coprime numbers. Let's first prove the implication to the right. Let $m < n$ be a natural number that is coprime to $p$ and $q$. Two numbers $m$ and $n$ are coprime iff $\gcd(m, n) = 1$. Because $n = p q$, the common divisers of $m$ and $n$ can only be: $1, p, q, n$ by the definition of prime numbers. From this we can learn that $p | m \implies \gcd(m, n) \neq 1$ and symmetrically $q | m \implies \gcd(m, n) \neq 1$. Because $m$ is by assumption coprime to $p$ and $q$, it follows that $\gcd(m, n)$ can only be $1$ or $n$. But because $m < n$, it can only be 1.
+
+ The implication to the left is easier. If we know that $\gcd(m, n) = 1$, we know that $p \not| m$ and $q \not| m$. Because $p$ and $q$ are prime, it naturally follows $m$ is coprime to both $p$ and $q$. $\square$
+
+ From the statement above we can learn that the only two numbers that are not coprime to $n$ and are still smaller than $n$ are exactly $p$ and $q$ (so exactly 2 integers). If we don't limit ourselves to smaller coprime numbers, there are infinitely amount of coprimes to $n$ (which would be divisible by at least one of $p, q$ or $n$).
+ 
+\item  Because $p$ and $q$ are primes, we know that all smaller numbers than them are their coprimes, so: $\varphi(p) = (p - 1)$ and $\varphi(q) = (q - 1)$. Because we proved that the coprimes to $n$ are exactly the primes to $p$ and the primes to $q$, we can derive the value of the totient function: \[\varphi(p q) = \varphi(p) \varphi(q) = (p - 1)(q - 1)\]
 
 \end{enumerate}
 

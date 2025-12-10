@@ -48,7 +48,14 @@
 \subsection*{Problem 3}
 \begin{enumerate}[label= (\alph*)]
 
- \item 
+ \item From the definition of our elliptic curve we can learn that $A = 2$ and $B = 4$. We need to check that $4 * 2^3 + 27 * 4^2 \not \equiv 0 (\mod 7)$. We can first change 27 into 6 $(\mod 7)$ from where we can easier calculate: \[4 * 2^3 + 6 * 4^2 = 2 (\mod 7) \not \equiv 0 (\mod 7)\]
+ \item \includegraphics[scale=0.11]{3ex_b.jpeg}
+ \item \includegraphics[scale=0.105]{3ex_c.jpeg}\\
+ \b{Remark}: I have later noticed that at the last step I didn't need to compute $\lambda$ since we could use the fact that $P = - Q$ is true. Calculating the $\lambda$ then of course produces the point at infinity because the line going through P and Q is vertical.
+ \item The main thing that changes from regular DH to ECDH is that we swap multiplication for addition which means that exponentiation becomes multiplication:\\ 
+ \includegraphics[scale=0.11]{3ex_d.jpeg}
+ \item We have a base/starting point $G = (2, 3)$. Alice has chosen a secret value $a = 2$ from which she generates $A := [a]G = [2](2, 3)$. Bob chose a secret value $b = 3$ from which he generates $B := [b]G = [3](2, 3)$. Alice and Bob then publically exchange $A$ and $B$. This can be done without reveiling either $a$ or $b$ because of the hardness of discrete log problem (we cannot efficiently calculate $a$ from $[a]G$ just like we couldn't calculate $a$ from $g^a$ in DH).
+ Alice then calculates $K_{A, B} := [a]B \mod p = [2][3](2, 3) = [5](2, 3) + (2, 3) = 0 + (2, 3) = (2, 3)$ and Bob symmetrically computes $K_{A, B} := [b]A \mod p = [3][2](2, 3) = [2][3](2, 3)$ due to commutativity. 
 
 \end{enumerate}
 
